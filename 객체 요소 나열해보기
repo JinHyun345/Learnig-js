@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset ="uth-8">
+    <title>learning Object</title>
+    <script>
+      function fam(self){
+              document.write((self).toString() + " : " + coworkers[self] + "<br>");
+        } 
+      /*document.write("me : " + coworkers.me + "<br>"); <-의 반복을 없애기 위한 함수 선언*/
+    </script>
+
+  </head>
+  <body>
+    <h1>Object</h1>
+    <h2>Create</h2>
+    <script>
+      
+      var coworkers = {
+        "me" : "jh",
+        "sis" : "mj"
+      };
+            <!--coworkers라는 객체에 jh라는 정보를 me라는 딱지를 붙여서 저장한 것-->
+      coworkers.mom = "yang";
+      coworkers["happy dad"] = "jong";
+
+      for (var property in coworkers){
+        do
+      }
+      
+      /*
+      fam("me");
+      fam("sis");
+      fam("mom");
+      fam("happy dad"); 
+      의 반복을 없애주기 위한 entries 도입*/
+    </script>
+  </body>
+</html>

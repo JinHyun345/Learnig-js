@@ -13,7 +13,7 @@
   </head>
   <body>
     <h1>Object</h1>
-    <h2>Create</h2>
+    <h2>Create & Iterate</h2>
     <script>
       
       var coworkers = {
@@ -24,16 +24,28 @@
       coworkers.mom = "yang";
       coworkers["happy dad"] = "jong";
 
-      for (var property in coworkers){
-        do
+      for (var key in coworkers){
+        document.write(key+" : "+coworkers[key]+"<br>");
       }
-      
       /*
       fam("me");
       fam("sis");
       fam("mom");
       fam("happy dad"); 
-      의 반복을 없애주기 위한 entries 도입*/
+      의 반복을 없애주기 위한 반복문 도입*/
     </script>
+    <h2>Property & method</h2>
+
+    <script>
+        coworkers.showAll = function(){
+            for (var key in this){
+                document.write(key+" : "+this[key]+"<br>");
+                }
+             }
+
+        coworkers.showAll();
+        /*coworkers의 이름이 바뀔 때를 대비하여 this를 씀*/
+    </script>
+
   </body>
 </html>
